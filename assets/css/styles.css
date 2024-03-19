@@ -90,10 +90,9 @@ scroll-behavior: smooth;
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
-    margin: auto;
+    margin: 68px auto 0px;
     text-align: center;
     border-radius: 40px;
-    margin-top: 117px;
 }
 
 .inicio .contenido-banner img{
