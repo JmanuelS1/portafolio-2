@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--para que funcionen los icons hay que colocar este link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jms</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!--  SECCION INICIO  -->
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img class="foto" src="/assets/imgs/img/r&m.jpg" alt="Imagen de JMS">
+            </div>
+            <h1>Jesús Sánchez</h>
+                <h2>Desarrollador Full-Stack</h2>
+                <div class="redes">
+                    <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-s%C3%A1nchez-6a925318a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/JmanuelS1" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/jmanuel.sanchez.18/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://es.wikipedia.org/wiki/Colombia" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
+                </div>
+        </div>
+    </section>
+
+
+    <!--  SECCION SOBRE MI  -->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Hola, Soy <span>Jesús Sánchez</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Accusantium, aliquam. Sapiente iusto reprehenderit in aperiam quisquam, ab ullam reiciendis perferendis
+                ea est quasi? Officiis quaerat ullam facilis debitis, consectetur alias.</p>
+
+            <div class="fila">
+
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            06-03-1991
+                        </li>
+                        
+
+                        <li>
+                            <strong>Numero de Contacto</strong>
+                            +573135375430
+                        </li>
+                        
+
+                        <li>
+                            <strong>Correo</strong>
+                            jmsr060391@gmail.com
+                        </li>
+                        
+
+                        <li>
+                            <strong>País</strong>
+                            Colombia
+                        </li>
+                    
+
+                        <li>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <!-- intereses  -->
+
+
+                <div class="col">
+                    <h3>Intereses</h3>
+
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>Deporte</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Gimnasio</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Estudiar</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+
+    <!--  SECCION SKILLS -->
+
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <div class="habilidades__title">
+                <h2>Mis Habilidades</h2>
+
+            </div>
+            <div class="habilidades__contenido">
+                <span class="span__grande">Estas son la base de mi éxito:</span><br>
+                <span class="span__pequeño">Mis capacidades técnicas y profesionales se convierten en el motor que
+                    me impulsa a superar desafíos y crear soluciones innovadoras. Son estas competencias las que
+                    cimientan cada paso de mi carrera. <br><br>
+
+                    Habilidades en diversas tecnologías web que han sido herramientas esenciales en mis
+                    proyectos.</span>
+            </div>
+
+
+            <div class="habilidades__img">
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/html.svg" alt="">
+                    </div>
+                    <span class="card__title">HTML</span>
+                    <span class="card__txt">Front-end</span>
+                </div>
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/css.svg" alt="">
+                    </div>
+                    <span class="card__title">CSS</span><br>
+                    <span class="card__txt">Front-end</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/javascript.svg" alt="">
+                    </div>
+                    <span class="card__title">Javascript</span><br>
+                    <span class="card__txt">Lenguajes</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/vite.svg" alt="">
+                    </div>
+                    <span class="card__title">Vite</span><br>
+                    <span class="card__txt">Desarrollo</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/react.svg" alt="">
+                    </div>
+                    <span class="card__title">React</span>
+                    <span class="card__txt">Front-end</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/redux.svg" alt="">
+                    </div>
+                    <span class="card__title">Redux</span>
+                    <span class="card__txt">Front-end</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/express.svg" alt="">
+                    </div>
+                    <span class="card__title">Express</span>
+                    <span class="card__txt">Back-end</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/nodejs.svg" alt="">
+                    </div>
+                    <span class="card__title">Node.js</span>
+                    <span class="card__txt">Back-end</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/postgres.svg" alt="">
+                    </div>
+                    <span class="card__title">postgresSql</span>
+                    <span class="card__txt">Back-end</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/github.svg" alt="">
+                    </div>
+                    <span class="card__title">GitHub</span>
+                    <span class="card__txt">Desarrollo</span>
+                </div>
+
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/bash.svg" alt="">
+                    </div>
+                    <span class="card__title">Bash</span>
+                    <span class="card__txt">Lenguajes</span>
+                </div>
+
+                <div class="card">
+                    <div class="img__card">
+                        <img class="link" src="/assets/imgs/img/svg/slack.svg" alt="">
+                    </div>
+                    <span class="card__title">slack</span>
+                    <span class="card__txtu">Productividad</span>
+                </div>
+            </div>
+
+            </container>
+    </section>
+
+
+    <!--  SECCION curriculum -->
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Educación Mención: Educación Física, Recreación y Deportes</h4>
+                        <br>
+                        
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati unde itaque delectus iste
+                            in nam animi, doloribus quos maxime neque et aut libero consequatur accusamus expedita!
+                            Excepturi dolorum minima velit.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+
+                    <div class="item izq">
+                        <h4>Técnico Superior Universitario en Administracion de Recursos Humanos</h4>
+                        <br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati unde itaque delectus iste
+                            in nam animi, doloribus quos maxime neque et aut libero consequatur accusamus expedita!
+                            Excepturi dolorum minima velit.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <div class="item izq">
+                        <h4>Desarrollo Full-Stack</h4>
+                        <br>
+                        
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati unde itaque delectus iste
+                            in nam animi. doloribus quos maxime neque et aut libero consequatur accusamus expedita!
+                            Excepturi dolorum minima velit.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col derecha">
+                    <h3>Casas de Estudio</h3>
+                    <div class="item der">
+                        <h4>Universidad Nacional Experimental de los llanos Occidentales Ezequiel Zamora</h4>
+                        <span class="casa">Unellez</span>
+                        <span class="fecha">2008 - 2013</span>
+                        <!--                         
+                        <div class="card__universidad">
+                            <div class="img__card1"> -->
+                        <img src="/assets/imgs/img/unellez.jpg" alt="unellez">
+                        <!-- </div> -->
+
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <div class="item der">
+                        <h4>Instituto Universitario de Tecnologia Coronel Agustin Codazzi</h4>
+                        <span class="casa">Iutac</span>
+                        <span class="fecha">2015 - 2018</span>
+                        <!-- 
+                        <div class="card__universidad">
+                            <div class="img__card1"> -->
+                        <img src="/assets/imgs/img/IUTAC.jpg" alt="iutac">
+                        <!-- </div> -->
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                    <br><br>
+
+
+                    <div class="item der">
+                        <h4>Desarrollo Full-Stack</h4>
+                        <span class="casa">Academlo</span>
+                        <span class="fecha">2024</span>
+                        <!-- <div class="card__universidad">
+                            <div class="img__card1"> -->
+                        <img src="/assets/imgs/img/academloblanco2.jpg" alt="academlo">
+                        <!-- </div> -->
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION PROYECTOS-->
+
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+            <div class="proyecto">
+            <img src="/assets/imgs/img/rym2.png" alt="">
+            <div class="overlay">
+                <h3>Rick & Morty</h3>
+                <p>Api de Busqueda</p>
+             </div>
+            </div>
+
+            <div class="proyecto">
+                <img src="/assets/imgs/img/pokemon.png" alt="">
+                <div class="overlay">
+                    <h3>Pokedex</h3>
+                    <p>Api de Busqueda</p>
+                 </div>
+                </div>
+
+            <div class="proyecto">
+                <img src="/assets/imgs/img/laptop.avif" alt="">
+                 <div class="overlay">
+                    <h3>Portafolio</h3>
+                    <p>Trabajos Personales</p>
+                </div>
+                </div>
+
+
+                <div class="proyecto">
+                    <img src="/assets/imgs/img/cafe.jpg" alt="">
+                     <div class="overlay">
+                        <h3>Portafolio</h3>
+                        <p>Trabajos Personales</p>
+                    </div>
+                    </div>
+
+
+                    <div class="proyecto">
+                        <img src="/assets/imgs/img/developer.jpg" alt="">
+                         <div class="overlay">
+                            <h3>Portafolio</h3>
+                            <p>Trabajos Personales</p>
+                        </div>
+                        </div>
+
+
+                        <div class="proyecto">
+                            <img src="/assets/imgs/img/developer3.avif" alt="">
+                             <div class="overlay">
+                                <h3>Portafolio</h3>
+                                <p>Trabajos Personales</p>
+                            </div>
+                            </div>
+        </div>
+    </div>
+    </section>
+
+    
+     <!-- SECCION CONTACTO-->
+
+     <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+
+
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text"  placeholder="Tu Nombre">
+                    <input type="text"  placeholder="Número telefónico">
+                    <input type="text"  placeholder="Dirección de correo">
+                    <input type="text"  placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+
+
+                <!--Mapa-->
+                <div class="col">
+                    <img src="/assets/imgs/img/mapa1.PNG" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Soacha, Cundinamarca, Colombia
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame al (+57) 313 5375430
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: jmsr060391@gmail.com
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     
+     <!-- FOOTER -->
+     <footer>
+        <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-s%C3%A1nchez-6a925318a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/JmanuelS1" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/jmanuel.sanchez.18/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://es.wikipedia.org/wiki/Colombia" target="_blank"><i class="fa-solid fa-earth-americas"></i></a>
+    </div>
+     </footer>
+
+     <script src="/assets/js/script.js"></script>
+</body>
+</html>
