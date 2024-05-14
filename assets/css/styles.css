@@ -77,7 +77,6 @@ scroll-behavior: smooth;
 
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.4), rgba(30,35,38,1)), url(/assets/imgs/img/laptop3horizontal.avif);
-    /* background-image: url(/assets/imgs/img/laptop3horizontal.avif); */
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -724,7 +723,7 @@ transition: 1s;
 .contacto .col .info ul li i{
     color: #1cb698;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 
@@ -779,8 +778,14 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+    transition: background-color 0.3s ease;
+    /* transform 0.3s ease; */
 }
 
+footer .arriba:hover {
+    background-color: #128870e2;
+    /* transform: scale(1.1); */
+}
 
 
 
