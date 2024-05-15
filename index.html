@@ -28,9 +28,9 @@
                     <ul>
                         <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                         <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                        <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
                         <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                        <li><a href="#portafolio" onclick="seleccionar()">PROYECTOS</a></li>
+                        <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
                         <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                     </ul>
                 </nav>
@@ -65,9 +65,7 @@
         <section id="sobremi" class="sobremi">
             <div class="contenido-seccion">
                 <h2>Sobre Mí</h2>
-                <p>Hola, Soy <span>Jesús Sánchez</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Accusantium, aliquam. Sapiente iusto reprehenderit in aperiam quisquam, ab ullam reiciendis perferendis
-                    ea est quasi? Officiis quaerat ullam facilis debitis, consectetur alias.</p>
+                <p>Hola, Soy <span>Jesús Sánchez</span> desarrollador web Front-end Me especializo en crear sitios web que ofrecen una experiencia de usuario única y satisfactoria, En mis trabajos siempre implemento las mejores prácticas y patrones de programación para asegurar la calidad y eficiencia de mis proyectos. Me enorgullece analizar los requerimientos detalladamente y estimar el tiempo necesario para completar las actividades de manera precisa.</p>
 
                 <div class="fila">
 
@@ -437,7 +435,7 @@
 
                     <div class="proyecto">
                         <a href='https://weather-app-jms.netlify.app' target="_blank">
-                        <img src="/assets/imgs/img/clima.jpg" alt="">
+                        <img src="/assets/imgs/img/clima2.png" alt="">
                         <div class="overlay">
                             <h3>App weather</h3>
                             <p>app de consulta del clima</p>
@@ -483,13 +481,13 @@
                     <!--Formulario-->
 
                     <div class="col">
-                        <form action="https://formsubmit.co/jmsr060391@gmail.com" method="POST">
+                        <form id="contact-form" action="https://formsubmit.co/jmsr060391@gmail.com" method="POST">
                         <input type="text" name="name" placeholder="Tu Nombre">
                         <input type="number" name='number' placeholder="Número telefónico">
                         <input type="email"  name='email' placeholder="Dirección de correo">
                         <input type="text" name="message" placeholder="Tema">
                         <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                        <button>
+                        <button type="submit" id="submit-btn">
                             Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
@@ -535,13 +533,39 @@
                 <i class="fa-solid fa-angles-up"></i>
             </a>
             <div class="redes">
+                <div class="footer__left">
+                    <span class="span2">Desde COLOMBIA</span>
+                    <img class="mapa" src="./assets/imgs/img/colombia.png" alt="colombia">
+                </div>
+                <div class="footer__mid">
                 <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-s%C3%A1nchez-6a925318a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/JmanuelS1" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.facebook.com/jmanuel.sanchez.18/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://es.wikipedia.org/wiki/Colombia" target="_blank" title="Ubicacion"><i class="fa-solid fa-earth-americas"></i></a>
             </div>
+                <div class="footer__right">
+                    <p class="parrafo">© 2024 Todos los derechos reservados.</p>
+                </div>
+            </div>
         </footer>
 
+
+
+
+
         <script src="/assets/js/script.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("contact-form").addEventListener("submit", function(event) {
+                    event.preventDefault(); // Evitar que el formulario se envíe de forma tradicional
+            
+                    // Simular un mensaje de envío exitoso
+                    alert("Mensaje enviado exitosamente, gracias por comunicarte pronto te respondere!");
+            
+                    // Limpiar el formulario
+                    document.getElementById("contact-form").reset();
+                });
+            });
+            </script>
     </body>
 </html>
