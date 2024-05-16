@@ -160,7 +160,7 @@ html {
 
 .contenido-seccion p {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
@@ -336,8 +336,6 @@ html {
     font-weight: bold;
     font-size: 1.40rem;
     /* padding-bottom: var(--sp-1); */
-
-
 }
 
 /* .habilidades__contenido .span__pequeño {
@@ -833,6 +831,7 @@ footer .mapa{
 
     .nav-responsive {
         display: block;
+        cursor: pointer;
     }
 
     nav.responsive {
@@ -842,6 +841,12 @@ footer .mapa{
         top: 75px;
         background-color: #252a2e;
         width: 180px;
+        padding: 15px 5px;
+    }
+
+    .nav-responsive i {
+        font-size: 1.5em;
+        color: white;
     }
 
     nav.responsive ul {
@@ -851,6 +856,13 @@ footer .mapa{
     nav.reponsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px;
+    }
+
+    nav.responsive ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em; 
+        display: block; 
     }
 }
 
