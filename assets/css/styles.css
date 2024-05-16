@@ -162,6 +162,10 @@ html {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify; /* Añadido: alineación justificada */
+    max-width: 900px; /* Añadido: ancho máximo */
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .contenido-seccion p span {
@@ -335,13 +339,16 @@ html {
 .habilidades__contenido .span__grande {
     font-weight: bold;
     font-size: 1.40rem;
-    /* padding-bottom: var(--sp-1); */
+  
 }
 
-/* .habilidades__contenido .span__pequeño {
-    /* font-size: var(--small-font);
-    padding-bottom: var(--sp-1); 
-} */
+.habilidades__contenido .span__pequeño {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    /* text-align: justify;  */
+    margin: 0 auto;
+}
 
 .habilidades__img {
     display: flex;
@@ -867,6 +874,11 @@ footer .mapa{
 }
 
 @media screen and (max-width:700px) {
+    .contenido-seccion p {
+        width: 100%; 
+        max-width: none;
+    }
+
     .skills {
         background-color: #1e2326;
         color: #fff;
@@ -956,4 +968,188 @@ footer .mapa{
     .contacto .fila .col {
         width: 100%;
     }
+
+    footer {
+        padding: 20px 20px; /* Ajustar el relleno para dispositivos pequeños */
+    }
+
+    footer .redes {
+        flex-direction: column; /* Cambiar la dirección de la disposición a columna */
+        gap: 10px; /* Espacio entre los elementos */
+    }
+
+    footer .footer__mid {
+        margin-top: 10px; /* Espacio entre la sección de redes sociales y el texto de derechos de autor */
+    }
+
+    footer .footer__right {
+        margin-top: 10px; /* Espacio entre la sección de redes sociales y el texto de derechos de autor */
+    }
+
+    footer .redes a {
+        width: 30px; 
+        height: 30px; 
+        line-height: 30px; 
+        font-size: 14px; 
+        margin: 5px; 
+    }
+
+    footer .arriba {
+        width: 40px; 
+        height: 40px; 
+        line-height: 40px;
+        font-size: 16px;
+        top: -20px;
+    }
+
+    footer .mapa {
+        width: 40px; 
+        height: 40px; 
+    }
 }
+
+@media screen and (max-width: 320px) {
+    /* Ajustes para el menú */
+    .contenedor-header header {
+      padding: 10px;
+    }
+  
+    .contenedor-header header .logo a {
+      font-size: 24px;
+    }
+  
+    .contenedor-header header nav ul li a {
+      margin: 0 8px;
+    }
+  
+    .nav-responsive {
+      display: block;
+    }
+  
+    /* Ajustes para la sección Inicio */
+    .inicio .contenido-banner {
+      max-width: 280px;
+      margin-top: 50px;
+    }
+  
+    .inicio .contenido-banner img {
+      margin-top: 30px;
+    }
+  
+    .inicio .contenido-banner h1 {
+      font-size: 32px;
+    }
+  
+    .inicio .contenido-banner h2 {
+      font-size: 13px;
+    }
+  
+    /* Ajustes para la sección Sobre Mí */
+    .contenido-seccion p {
+      font-size: 16px;
+    }
+  
+    /* Ajustes para la sección Habilidades */
+    .habilidades__contenido {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+      font-size: 14px;
+    }
+  
+    .habilidades__img {
+      width: 100%;
+      padding-left: 0;
+      justify-content: center;
+    }
+  
+    /* Ajustes para la sección Curriculum */
+    .curriculum .fila .col {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .curriculum .fila .item img {
+      width: 80px;
+    }
+  
+    /* Ajustes para la sección Proyectos */
+    .proyectos .contenido-seccion {
+      padding: 20px 10px;
+    }
+  
+    .proyectos h2 {
+      font-size: 36px;
+      padding: 10px 0;
+    }
+  
+    .proyectos .galeria .proyecto {
+      max-width: 280px;
+      margin: 5px;
+    }
+  
+    .proyectos .galeria .proyecto img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .proyectos .galeria .proyecto .overlay {
+      font-size: 14px;
+    }
+  
+    .proyectos .galeria .proyecto .overlay h3 {
+      margin-bottom: 10px;
+    }
+  
+    /* Ajustes para la sección Contacto */
+    .contacto {
+      padding: 30px 10px;
+    }
+  
+    .contacto .contenido-seccion {
+      padding: 0;
+    }
+  
+    .contacto .col {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    .contacto .col input,
+    .contacto .col textarea {
+      padding: 14px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    .contacto .col .info {
+      top: 20%;
+      padding: 15px;
+      max-width: 280px;
+    }
+  
+    .contacto .col .info ul li {
+      margin-bottom: 15px;
+    }
+  
+    .contacto button {
+      padding: 8px 18px;
+      font-size: 14px;
+    }
+  
+    /* Ajustes para el Footer */
+    footer .redes a {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      margin: 20px 3px;
+      font-size: 18px;
+    }
+  
+    footer .arriba {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+    }
+  }
