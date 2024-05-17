@@ -604,6 +604,8 @@ html {
     width: 250px;
     height: 230px;
     display: block;
+    border-radius: 100%;
+
 }
 
 .proyectos .galeria .proyecto .overlay {
