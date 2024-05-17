@@ -15,3 +15,33 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    let activeLink = document.querySelector('.nav-link.active');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            if (link === activeLink) return;
+
+            const target = link.getAttribute('data-target');
+            const previousTarget = activeLink ? activeLink.getAttribute('data-target') : null;
+
+            if (previousTarget) {
+                const previousActiveItem = document.querySelector(`.nav-link[data-target="${previousTarget}"]`);
+                previousActiveItem.classList.remove('active');
+            }
+
+            link.classList.add('active');
+            activeLink = link;
+
+            gsap.fromTo(".nav-link.active::after", 
+                { width: 0, background: 'transparent' },
+                { width: '100%', background: '#0f0', duration: 0.5, ease: "power1.inOut" }
+            );
+        });
+    });
+});
+

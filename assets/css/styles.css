@@ -15,7 +15,7 @@ html {
 
 /* MENU */
 
-.contenedor-header {
+/* .contenedor-header {
     background: #1e2326;
     position: fixed;
     width: 100%;
@@ -59,6 +59,81 @@ html {
 
 .contenedor-header header nav ul li a:hover {
     color: #1cb698;
+}
+
+.nav-responsive {
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+ */
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.contenedor-header {
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 1px solid gray;
+}
+
+.contenedor-header header {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: color .5s;
+    font-size: 15px;
+    position: relative;
+}
+
+.contenedor-header header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1cb698;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width .3s ease-in-out;
+}
+
+.contenedor-header header nav ul li a:hover::after,
+.contenedor-header header nav ul li a.active::after {
+    width: 100%;
 }
 
 .nav-responsive {
@@ -665,7 +740,7 @@ html {
     padding: 20px 0;
 }
 
-.contacto.fila {
+.contacto .fila {
     display: flex;
 }
 
