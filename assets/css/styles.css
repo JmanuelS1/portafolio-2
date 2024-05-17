@@ -237,6 +237,10 @@ html {
     margin-bottom: 10px;
 }
 
+.boton-descarga {
+    text-decoration: none; 
+}
+
 .sobremi button {
     cursor: pointer;
     background-color: transparent;
