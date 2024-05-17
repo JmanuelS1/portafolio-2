@@ -162,8 +162,8 @@ html {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: justify; /* Añadido: alineación justificada */
-    max-width: 900px; /* Añadido: ancho máximo */
+    text-align: center; 
+    max-width: 900px; 
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -212,7 +212,7 @@ html {
 .fila .col .contenedor-intereses {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px
+    gap: 20px;
 }
 
 .fila .col .contenedor-intereses .interes {
@@ -911,7 +911,7 @@ footer .mapa{
         display: block !important;
     }
 
-    nav.reponsive ul li {
+    nav.responsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px;
     }
