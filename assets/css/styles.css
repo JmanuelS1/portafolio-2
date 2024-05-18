@@ -518,7 +518,7 @@ html {
 
 .curriculum .fila .col {
     width: 49%;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .curriculum .fila .col h3 {
@@ -577,13 +577,23 @@ html {
 }
 
 .curriculum .fila .izq {
+    display: flex;
     border-right: 3px solid #1cb698;
     margin-right: 20px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .curriculum .fila .der {
+    display: flex;
     border-left: 3px solid #1cb698;
     margin-left: 20px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .curriculum .fila .item .conectori {
@@ -823,6 +833,7 @@ color: #0B68C6
 
 .fa-earth-americas{
     color: #2ecc71; 
+
 }
 
 
