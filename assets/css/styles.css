@@ -640,13 +640,21 @@ html {
 
 /* SECCION PROYECTOS */
 
-
+.contenedor__proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    gap: 5px; /* Espacio entre la imagen y la descripción */
+    width: 290px;
+}
 
 .proyectos {
     background-color: #252a2e;
     color: #fff;
     padding: 50px 20px;
 }
+
 
 .proyectos .contenido-seccion {
     max-width: 1024px;
@@ -663,7 +671,8 @@ html {
 .proyectos .galeria {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap:70px
 }
 
 .proyectos .galeria .proyecto {
@@ -722,12 +731,62 @@ html {
     font-size: 20px;
 }
 
+
+.proyecto__redirection a {
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.proyecto__redirection a:hover {
+    color: #007BFF; 
+    transform: translateY(-5px); 
+}
+
+
+.proyecto__redirection i {
+    font-size: 24px; 
+    vertical-align: middle; 
+}
+
+
+.proyecto__tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.proyecto__tecnologias span {
+    background-color: rgba(255, 255, 255, 0.1);  
+    color: #fff;  
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px; 
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);  
+    transition: all 0.3s ease;
+}
+
+.proyecto__tecnologias span:hover {
+    transform: translateY(-2px); 
+    background-color: rgba(255, 255, 255, 0.2);  
+}
+
+.proyecto__tecnologias i {
+    margin-right: 5px; 
+}
+
+
 .proyecto__redirection, .proyecto__tecnologias {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
 }
+
 
 .proyecto__tecnologias span {
     margin: 0 5px;
@@ -763,10 +822,7 @@ color: #0B68C6
 }
 
 .fa-earth-americas{
-    color: #2ecc71; /* Verde */
-    /* o */
-    /* color: #3498db; */
-
+    color: #2ecc71; 
 }
 
 
