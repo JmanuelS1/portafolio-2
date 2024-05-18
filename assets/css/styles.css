@@ -711,6 +711,63 @@ html {
     margin-bottom: 0px;
 }
 
+.proyecto__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyecto__redirection{
+    font-size: 20px;
+}
+
+.proyecto__redirection, .proyecto__tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.proyecto__tecnologias span {
+    margin: 0 5px;
+}
+
+.proyecto__redirection a {
+    margin: 0 10px;
+}
+
+.fa-square-js{
+    color: #FFCA28;
+}
+
+.fa-css3-alt{
+    color: #3F8AC8;
+}
+.fa-html5{
+color: #E44D26
+}
+.fa-react{
+color: #59C4E2
+}
+
+.fa-arrow-up-right-from-square{
+    color: #1CB698
+}
+
+.fa-github{
+    color: #E6EDF3
+}
+.fa-linkedin-in{
+color: #0B68C6
+}
+
+.fa-earth-americas{
+    color: #2ecc71; /* Verde */
+    /* o */
+    /* color: #3498db; */
+
+}
 
 
 
