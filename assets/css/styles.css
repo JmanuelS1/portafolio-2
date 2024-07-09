@@ -200,7 +200,7 @@ body {
     flex-direction: column;
 }
 
-.col .titulo--intereses{
+.col .titulo--intereses {
     justify-content: center;
     margin-left: auto;
     width: 230px;
@@ -268,7 +268,7 @@ body {
     text-decoration: none;
 }
 
-.boton-descarga{
+.boton-descarga {
     border-radius: 10px;
     overflow: hidden;
 }
@@ -660,7 +660,7 @@ body {
     border-radius: 100%;
 }
 
-.img-proyecto{
+.img-proyecto {
     aspect-ratio: 1/1;
 }
 
@@ -914,7 +914,7 @@ body {
     margin-right: 5px;
 }
 
-.btn-enviar{
+.btn-enviar {
     border-radius: 10px;
     overflow: hidden;
 }
@@ -1112,9 +1112,12 @@ footer .mapa {
     }
 }
 
-@media screen and (max-width: 900px){
-    .item.der{
-        h4, .casa, .fecha{
+@media screen and (max-width: 900px) {
+    .item.der {
+
+        h4,
+        .casa,
+        .fecha {
             display: none;
         }
     }
@@ -1256,9 +1259,64 @@ footer .mapa {
     }
 }
 
+@media screen and (max-width: 460px) {
+    .inicio {
+        min-height: 110vh;
+    }
+
+    .inicio .contenido-banner {
+        padding: 20px 20px;
+    }
+
+    .sobremi {
+        padding: 20px 20px;
+    }
+
+    .skills{
+        padding: 10px 10px;
+    }
+
+
+    .contenedor-intereses {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center !important;
+    }
+
+    .contacto .fila {
+        flex-direction: column;
+    }
+
+    .contacto .col .info {
+        top: 50%;
+    }
+
+    .sobremi .fila {
+        flex-direction: column;
+        gap: 30px
+    }
+
+    .sobremi .fila .col .titulo--datos {
+        text-align: center;
+    }
+    .curriculum{
+        padding: 10px 10px;
+    }
+
+    .proyectos{
+        padding: 10px 10px;
+    }
+
+    .contacto{
+        padding: 10px 10px;
+    }
+
+}
+
 @media screen and (max-width: 320px) {
 
-    .contenedor-intereses{
+    .contenedor-intereses {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -1266,33 +1324,33 @@ footer .mapa {
     }
 
 
-    .col .titulo--intereses{
+    .col .titulo--intereses {
         justify-content: center;
-        margin:auto;
+        margin: auto;
     }
 
-    .sobremi .col{
+    .sobremi .col {
         width: 100%;
     }
 
-    .sobremi h3{
+    .sobremi h3 {
         text-align: center;
     }
 
-    .sobremi .fila .col ul{
+    .sobremi .fila .col ul {
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
     }
 
-    .sobremi .fila .col ul li{
+    .sobremi .fila .col ul li {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .sobremi .freelance{
+    .sobremi .freelance {
         display: flex;
         justify-content: center;
     }
@@ -1301,8 +1359,8 @@ footer .mapa {
         display: flex;
         flex-direction: column;
     }
-    
-   
+
+
 
     /* Ajustes para el menú */
     .contenedor-header header {
@@ -1360,9 +1418,10 @@ footer .mapa {
     }
 
     /* Ajustes para la sección Curriculum */
-    .titulo--proyect{
+    .titulo--proyect {
         margin-bottom: 50px;
     }
+
     .curriculum .fila .col {
         width: 100%;
         padding: 0;
@@ -1377,11 +1436,11 @@ footer .mapa {
         padding: 20px 10px;
     }
 
-    .contenedor__proyecto{
+    .contenedor__proyecto {
         width: 80%;
     }
 
-    .proyecto__tecnologias{
+    .proyecto__tecnologias {
         gap: 10px;
     }
 
@@ -1408,7 +1467,7 @@ footer .mapa {
         margin-bottom: 10px;
     }
 
-    .proyectos .contenedor__proyecto .proyecto__tecnologias{
+    .proyectos .contenedor__proyecto .proyecto__tecnologias {
         display: flex;
         flex-wrap: wrap;
     }
@@ -1427,7 +1486,7 @@ footer .mapa {
         padding: 0 10px;
     }
 
-    .con2{
+    .con2 {
         display: none;
     }
 
@@ -1439,9 +1498,10 @@ footer .mapa {
     }
 
     .contacto .col .info {
-      display: none
+        display: none
     }
-    .contacto .col .mapa{
+
+    .contacto .col .mapa {
         display: none;
     }
 
