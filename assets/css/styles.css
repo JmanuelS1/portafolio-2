@@ -1272,7 +1272,7 @@ footer .mapa {
         padding: 20px 20px;
     }
 
-    .skills{
+    .skills {
         padding: 10px 10px;
     }
 
@@ -1300,16 +1300,17 @@ footer .mapa {
     .sobremi .fila .col .titulo--datos {
         text-align: center;
     }
-    .curriculum{
+
+    .curriculum {
         padding: 10px 10px;
     }
 
-    .proyectos{
+    .proyectos {
         padding: 10px 10px;
     }
 
-    .contacto{
-        padding: 10px 10px;
+    .contacto {
+        padding: 20px 10px;
     }
 
 }
