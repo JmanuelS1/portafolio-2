@@ -23,7 +23,6 @@
 
         <!--  HEADER -->
 
-
         <div class="contenedor-header">
             <header>
                 <div class="logo">
@@ -77,7 +76,7 @@
                     <!-- datos personales-->
                     <div class="col">
                         <h3>Datos Personales</h3>
-                        <ul>
+                        <ul class="personales">
                             <li>
                                 <strong>Cumpleaños</strong>
                                 06-03-1991
@@ -102,7 +101,7 @@
                             </li>
 
 
-                            <li>
+                            <li class="freelance">
                                 <span>FREELANCE</span>
                             </li>
                         </ul>
@@ -113,8 +112,8 @@
                     <!-- intereses  -->
 
 
-                    <div class="col">
-                        <h3>Intereses</h3>
+                    <div class="col ">
+                        <h3 class="titulo--intereses">Intereses</h3>
 
                         <div class="contenedor-intereses">
 
@@ -151,24 +150,23 @@
                         </div>
                     </div>
                 </div>
-                <a href="./assets/files/CVJMS.pdf" download="Jesus_Sanchez_CV.pdf" class="boton-descarga">
-                    <button>
+                <a href="./assets/files/CVJMS.pdf" download="Jesus_Sanchez_CV.pdf" class="descarga">
+                    <button class="boton-descarga">
                         Descargar CV <i class="fa-solid fa-download"></i>
                         <span class="overlay"></span>
                     </button>
                 </a>
+
             </div>
         </section>
 
 
         <!--  SECCION SKILLS -->
 
-
         <section class="skills" id="skills">
             <div class="contenido-seccion">
                 <div class="habilidades__title">
                     <h2>Mis Habilidades</h2>
-
                 </div>
                 <div class="habilidades__contenido">
                     <span class="span__grande">Estas son la base de mi éxito:</span><br>
@@ -258,7 +256,7 @@
                         <div class="img__card">
                             <img class="link" src="/assets/imgs/img/svg/postgres.svg" alt="">
                         </div>
-                        <span class="card__title">postgresSql</span>
+                        <span class="card__title">PostgresSql</span>
                         <span class="card__txt">Back-end</span>
                     </div>
 
@@ -284,7 +282,7 @@
                         <div class="img__card">
                             <img class="link" src="/assets/imgs/img/svg/slack.svg" alt="">
                         </div>
-                        <span class="card__title">slack</span>
+                        <span class="card__title">Slack</span>
                         <span class="card__txtu">Productividad</span>
                     </div>
                 </div>
@@ -303,16 +301,15 @@
 
                         <h3>Educación</h3>
 
-
                         <div class="item izq">
                             <br>
-                            <h4>Licenciatura en Educación Mención: Educación Física, Recreación y Deportes</h4>
+                            <h4>Desarrollo Full-Stack</h4>
                             <br>
-
                             <div class="conectori">
                                 <div class="circuloi"></div>
                             </div>
                         </div>
+
                         <br><br><br>
 
 
@@ -329,34 +326,38 @@
 
                         <div class="item izq">
                             <br>
-                            <h4>Desarrollo Full-Stack</h4>
+                            <h4>Licenciatura en Educación Mención: Educación Física, Recreación y Deportes</h4>
                             <br>
+
                             <div class="conectori">
                                 <div class="circuloi"></div>
                             </div>
                         </div>
+                      
                     </div>
+
+
 
 
 
 
                     <div class="col derecha">
                         <h3>Casas de Estudio</h3>
-                        <div class="item der">
-                            <h4>Universidad Nacional Experimental de los llanos Occidentales Ezequiel Zamora</h4>
-                            <span class="casa">Unellez</span>
-                            <span class="fecha">2008 - 2013</span>
-                            <!--                         
-                        <div class="card__universidad">
-                            <div class="img__card1"> -->
-                            <img src="/assets/imgs/img/unellez.jpg" alt="unellez">
-                            <!-- </div> -->
 
+                        <div class="item der">
+                            <h4>Desarrollo Full-Stack</h4>
+                            <span class="casa">Academlo</span>
+                            <span class="fecha">2024</span>
+                            <!-- <div class="card__universidad">
+                            <div class="img__card1"> -->
+                            <img src="/assets/imgs/img/academloblanco2.jpg" alt="academlo">
+                            <!-- </div> -->
 
                             <div class="conectord">
                                 <div class="circulod"></div>
                             </div>
                         </div>
+                     
                         <br><br><br>
 
                         <div class="item der">
@@ -378,14 +379,17 @@
                         <br><br>
 
 
+
                         <div class="item der">
-                            <h4>Desarrollo Full-Stack</h4>
-                            <span class="casa">Academlo</span>
-                            <span class="fecha">2024</span>
-                            <!-- <div class="card__universidad">
+                            <h4>Universidad Nacional Experimental de los llanos Occidentales Ezequiel Zamora</h4>
+                            <span class="casa">Unellez</span>
+                            <span class="fecha">2008 - 2013</span>
+                            <!--                         
+                        <div class="card__universidad">
                             <div class="img__card1"> -->
-                            <img src="/assets/imgs/img/academloblanco2.jpg" alt="academlo">
+                            <img src="/assets/imgs/img/unellez.jpg" alt="unellez">
                             <!-- </div> -->
+
 
                             <div class="conectord">
                                 <div class="circulod"></div>
@@ -397,21 +401,18 @@
         </section>
 
 
-
-
         <!-- SECCION PROYECTOS-->
 
         <section id="proyectos" class="proyectos">
             <div class="contenido-seccion">
-                <h2>PROYECTOS</h2>
+                <h2 class="titulo--proyect">PROYECTOS</h2>
                 <div class="galeria">
-
 
 
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href="https://rick-y-morty-app-jm.netlify.app" target="_blank">
-                                <img src="/assets/imgs/img/rym2.png" alt="rick y morty">
+                                <img class="img-proyecto" src="/assets/imgs/img/rym2.png" alt="rick y morty">
                                 <div class="overlay">
                                     <h3>Rick & Morty</h3>
                                     <p>Api de personajes</p>
@@ -436,7 +437,7 @@
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://pokedex-jm.netlify.app/' target="_blank">
-                                <img src="/assets/imgs/img/ask.png" alt="pokemon">
+                                <img class="img-proyecto" src="/assets/imgs/img/ask.png" alt="pokemon">
                                 <div class="overlay">
                                     <h3>Pokedex</h3>
                                     <p>Api de pokemones</p>
@@ -465,7 +466,7 @@
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://e-commerce-jm.netlify.app' target="_blank">
-                                <img src="/assets/imgs/img/e-commerce.avif" alt="">
+                                <img class="img-proyecto" src="/assets/imgs/img/e-commerce.avif" alt="">
                                 <div class="overlay">
                                     <h3>E-commerce</h3>
                                     <p>Comercio electronico</p>
@@ -490,7 +491,7 @@
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://weather-app-jms.netlify.app' target="_blank">
-                                <img src="/assets/imgs/img/clima2.png" alt="">
+                                <img class="img-proyecto" src="/assets/imgs/img/clima2.png" alt="">
                                 <div class="overlay">
                                     <h3>App weather</h3>
                                     <p>app de consulta del clima</p>
@@ -516,7 +517,7 @@
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://users-app-js.netlify.app' target="_blank">
-                                <img src="/assets/imgs/img/users.jpg" alt="">
+                                <img  class="img-proyecto" src="/assets/imgs/img/users.jpg" alt="">
                                 <div class="overlay">
                                     <h3>Users</h3>
                                     <p>app de creacion y registro de usuarios</p>
@@ -542,7 +543,7 @@
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://fortune-cookie-jm.netlify.app' target="_blank">
-                                <img src="/assets/imgs/img/cookie.webp" alt="">
+                                <img class="img-proyecto" src="/assets/imgs/img/cookie.webp" alt="">
                                 <div class="overlay">
                                     <h3>Fortune cookie</h3>
                                     <p>Galleta de la fortuna, consulta la tuya..</p>
@@ -574,28 +575,60 @@
 
                 <div class="fila">
 
-                    <!--Formulario-->
-
-                    <div class="col">
+                    <div class="col con1">
                         <form id="contact-form" action="https://formspree.io/f/xvoeyyay" method="POST">
                             <input type="text" name="name" placeholder="Tu Nombre">
                             <input type="number" name='number' placeholder="Número telefónico">
                             <input type="email" name='email' placeholder="Dirección de correo">
                             <input type="text" name="message" placeholder="Tema">
                             <textarea name="textarea" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                            <button type="submit" id="submit-btn">
+                            <button class="btn-enviar" type="submit" id="submit-btn">
                                 Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                                 <span class="overlay"></span>
                             </button>
                         </form>
                     </div>
 
+                    <!--para hacerlo como el de google
+                    
+                    
+                        <!--Formulario-->
+                    <!-- 
+                   <div class="col">
+    <form id="contact-form" action="https://formspree.io/f/xvoeyyay" method="POST">
+        <div class="label">
+            <input type="text" name="name" class="input" placeholder=" " id="name">
+            <label for="name" class="label__name">Tu Nombre</label>
+        </div>
+        <div class="label">
+            <input type="number" name="number" class="input" placeholder=" " id="number">
+            <label for="number" class="label__name">Número telefónico</label>
+        </div>
+        <div class="label">
+            <input type="email" name="email" class="input" placeholder=" " id="email">
+            <label for="email" class="label__name">Dirección de correo</label>
+        </div>
+        <div class="label">
+            <input type="text" name="message" class="input" placeholder=" " id="message">
+            <label for="message" class="label__name">Tema</label>
+        </div>
+        <div class="label">
+            <textarea name="textarea" class="input" cols="30" rows="10" placeholder=" " id="textarea"></textarea>
+            <label for="textarea" class="label__name">Mensaje</label>
+        </div>
+        <button type="submit" id="submit-btn">
+            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+        </button>
+    </form>
+</div>
+ -->
 
 
                     <!--Mapa-->
 
-                    <div class="col">
-                        <img src="/assets/imgs/img/mapa1.PNG" alt="">
+                    <div class="col con2">
+                        <img class="mapa" src="/assets/imgs/img/mapa1.PNG" alt="">
                         <div class="info">
                             <ul>
                                 <li>
@@ -636,7 +669,7 @@
                     <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-s%C3%A1nchez-rinc%C3%B3n-6a925318a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://github.com/JmanuelS1" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a>
                     <!-- <a href="https://www.facebook.com/jmanuel.sanchez.18/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a> -->
-                    <a href="https://es.wikipedia.org/wiki/Colombia" target="_blank" title="Ubicacion"><i class="fa-solid fa-earth-americas"></i></a>
+                    <!-- <a href="https://es.wikipedia.org/wiki/Colombia" target="_blank" title="Ubicacion"><i class="fa-solid fa-earth-americas"></i></a> -->
                 </div>
                 <div class="footer__right">
                     <p class="parrafo">© 2024 Todos los derechos reservados.</p>
