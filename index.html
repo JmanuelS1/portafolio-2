@@ -13,6 +13,7 @@
 
         <!--para importar los estilos-->
         <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel='stylesheet' href='/assets/css/swiper.css'>
 
         <!--para cambio del favicon-->
         <link rel="icon" type="image/png" href="/assets/imgs/img/portfolio7.png">
@@ -43,6 +44,7 @@
                 </div>
             </header>
         </div>
+        
 
 
         <!--  SECCION INICIO  -->
@@ -69,12 +71,12 @@
         <section id="sobremi" class="sobremi">
             <div class="contenido-seccion">
                 <h2>Sobre Mí</h2>
-                <p class="parragraph ">Hola, Soy <span>Jesús Sánchez</span> desarrollador web Front-end Me especializo en crear sitios web que ofrecen una experiencia de usuario única y satisfactoria, En mis trabajos siempre implemento las mejores prácticas y patrones de programación para asegurar la calidad y eficiencia de mis proyectos. Me enorgullece analizar los requerimientos detalladamente y estimar el tiempo necesario para completar las actividades de manera precisa.</p>
+                <p class="parragraph ">Hola, Soy <span>Jesús Sánchez</span> desarrollador web Full-Stack Me especializo en crear sitios web que ofrecen una experiencia de usuario única y satisfactoria, En mis trabajos siempre implemento las mejores prácticas y patrones de programación para asegurar la calidad y eficiencia de mis proyectos. Me enorgullece analizar los requerimientos detalladamente y estimar el tiempo necesario para completar las actividades de manera precisa.</p>
 
                 <div class="fila">
 
                     <!-- datos personales-->
-                    <div class="col">
+                    <!-- <div class="col">
                         <h3 class="titulo--datos">Datos Personales</h3>
                         <ul class="personales">
                             <li>
@@ -105,7 +107,7 @@
                                 <span>FREELANCE</span>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
 
 
 
@@ -159,6 +161,7 @@
 
             </div>
         </section>
+        <hr>
 
 
         <!--  SECCION SKILLS -->
@@ -339,6 +342,7 @@
 
                 </container>
         </section>
+        <hr>
 
 
         <!--  SECCION curriculum -->
@@ -450,15 +454,21 @@
             </div>
         </section>
 
+        <hr>
+
 
         <!-- SECCION PROYECTOS-->
+        <!--slides nuevas-->
 
-        <section id="proyectos" class="proyectos">
+        <section id="slides" class="slides">
+
             <div class="contenido-seccion">
                 <h2 class="titulo--proyect">PROYECTOS</h2>
                 <div class="galeria">
+            <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
 
 
+                <swiper-slide>
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href="https://rick-y-morty-app-jm.netlify.app" target="_blank">
@@ -482,8 +492,12 @@
                             </div>
                         </div>
                     </div>
+                </swiper-slide>
 
 
+
+
+                <swiper-slide>
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://pokedex-jm.netlify.app/' target="_blank">
@@ -507,12 +521,11 @@
                             </div>
                         </div>
                     </div>
+                </swiper-slide>
 
 
 
-
-
-
+                <swiper-slide>
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://e-commerce-jm.netlify.app' target="_blank">
@@ -536,8 +549,10 @@
                             </div>
                         </div>
                     </div>
+                </swiper-slide>
 
 
+                <swiper-slide>
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://weather-app-jms.netlify.app' target="_blank">
@@ -561,9 +576,13 @@
                             </div>
                         </div>
                     </div>
+                </swiper-slide>
 
 
+        
 
+
+                <swiper-slide>
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://users-app-js.netlify.app' target="_blank">
@@ -587,9 +606,10 @@
                             </div>
                         </div>
                     </div>
+                </swiper-slide>
 
 
-
+                <swiper-slide>
                     <div class="contenedor__proyecto">
                         <div class="proyecto">
                             <a href='https://fortune-cookie-jm.netlify.app' target="_blank">
@@ -613,8 +633,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </swiper-slide>
+            </swiper-container>
+
+        </div>
         </section>
+        <hr>
 
 
         <!-- SECCION CONTACTO-->
@@ -743,6 +767,7 @@
 
 
         <script src="/assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         <!--script para el modal-->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
