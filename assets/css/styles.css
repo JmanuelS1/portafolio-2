@@ -609,7 +609,7 @@ body {
 
 
 swiper-container {
-    width: 340px;
+    width: 320px;
     height: 450px;
   }
  
@@ -771,11 +771,15 @@ swiper-container {
 }
 
 
-.slides .contenido-seccion .galeria .contenedor__proyecto .proyecto .proyecto__tecnologias {
+.slides .contenido-seccion .galeria .mySwiper .contenedor__proyecto .proyecto__tecnologias{
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
+
+
 
 
 .slides .proyecto__tecnologias span {
@@ -815,6 +819,11 @@ swiper-container {
 
 .slides .proyecto__redirection a {
     margin: 0 10px;
+}
+
+.slides .contenido-seccion .galeria .mySwiper .contenedor__proyecto .vite .vitesito{
+    width: 12px;
+    height: 12px;
 }
 
 .slides .fa-square-js {
@@ -1358,9 +1367,27 @@ footer .mapa {
         padding: 20px 10px;
     }
 
+    .slides .contenido-seccion .galeria .contenedor__proyecto{
+        justify-content: center;
+    }
+
+    .slides .contenido-seccion .galeria .mySwiper .contenedor__proyecto .img-proyecto{
+        height: 150px;
+        width: 150px; 
+    }
+
+    .slides .contenido-seccion .galeria .mySwiper .contenedor__proyecto .proyecto__tecnologias{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
     swiper-container {
-        width: 200px;
+        width: 225px;
         height: 360px;
+      }
+
+      .mySwiper{
+        margin: auto;
       }
 
 }
