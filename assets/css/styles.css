@@ -192,7 +192,7 @@ body {
 
 .fila {
     display: flex;
-    justify-content: space-around
+    justify-content: center
 }
 
 .col {
@@ -234,7 +234,6 @@ body {
 }
 .fila .col .contenedor-intereses {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -244,7 +243,6 @@ body {
     height: 80px;
     background-color: rgb(96, 94, 94);
     border-radius: 10px;
-    margin: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
