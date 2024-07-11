@@ -655,6 +655,9 @@ swiper-container {
     justify-content: center;
     padding: 20px 20px;
     overflow-x: hidden;
+    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)), url('../imgs/img/foundprojects1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
  }
 
 .slides .contenido-seccion .galeria .contenedor__proyecto {
