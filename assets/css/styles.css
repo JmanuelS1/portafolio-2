@@ -178,11 +178,11 @@ body {
 
 
 .item-- .icon-- {
-    color: #0A66C2; 
+    color: #0A66C2;
 }
 
 .item--:nth-child(2) .icon-- {
-    color: #000; 
+    color: #000;
 }
 
 .item-- a:hover {
@@ -739,15 +739,45 @@ swiper-slide {
   swiper-slide:nth-child(10n) {
   } */
 
-.slides {
+
+/*CERTIFICADOS*/
+
+/* Estilo inicial para el cursor grab */
+
+.slider-certs {
+    width: 550px;
+    height: auto;
+}
+
+.slider-certs swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider-certs swiper-slide {
+    text-align: center;
+    font-size: 18px;
     display: flex;
     justify-content: center;
-    padding: 20px 20px;
-    overflow-x: hidden;
-    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)), url('../imgs/img/foundprojects1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    align-items: center;
+    border-radius: 0%;
+    cursor: grab;
+    cursor: -webkit-grab;
+  }
+
+  .slider-certs swiper-slide:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .slider-certs  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/*Proyectos*/
 
 .slides .contenido-seccion .galeria .contenedor__proyecto {
     display: flex;
@@ -760,10 +790,36 @@ swiper-slide {
 
 .slides {
     background-color: #1e2326;
-    ;
     color: #fff;
     padding: 50px 20px;
+    display: flex;
+    overflow-x: hidden;
+    background: linear-gradient(to top, rgba(30, 35, 38, .4), rgba(30, 35, 38, 1)), url('../imgs/img/foundprojects1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.slides .contenido-seccion {
+    display: flex;
+    width: 100%;
+}
+
+.slides .contenido-seccion .seccion-izquierda{
+    flex: 1;
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 40px
+}
+
+.slides .contenido-seccion .seccion-derecha{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
 
 
 .slides .proyecto h2 {
@@ -773,12 +829,12 @@ swiper-slide {
     padding: 20px 0;
 }
 
-.slides .contenido-seccion .galeria .contenedor__proyecto .proyecto .galeria {
+/* .slides .contenido-seccion .galeria .contenedor__proyecto .proyecto .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 70px
-}
+} */
 
 .slides .contenido-seccion .galeria .contenedor__proyecto .proyecto {
     position: relative;
@@ -850,7 +906,7 @@ swiper-slide {
 }
 
 
-.slides .contenido-seccion .galeria .mySwiper .contenedor__proyecto .proyecto__description .proyecto__redirection a{
+.slides .contenido-seccion .galeria .mySwiper .contenedor__proyecto .proyecto__description .proyecto__redirection a {
     transition: all 0.3s ease;
 }
 
@@ -966,6 +1022,7 @@ swiper-slide {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
+    background-size: cover;
 }
 
 .contacto .contenido-seccion {
@@ -1263,6 +1320,11 @@ footer .mapa {
         font-size: 1.2em;
         display: block;
     }
+
+    .slides .contenido-seccion .seccion-izquierda .slider-certs{
+        width: 350px;
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1273,6 +1335,11 @@ footer .mapa {
         .fecha {
             display: none;
         }
+    }
+
+    .slides .contenido-seccion .seccion-izquierda .slider-certs{
+        width: 350px;
+        margin-top: 50px;
     }
 }
 
@@ -1350,6 +1417,32 @@ footer .mapa {
 
     .curriculum .fila .derecha {
         margin-left: 20px;
+    }
+
+    .slides{
+        padding: 20px 20px;
+    }
+
+    .slides .contenido-seccion .seccion-izquierda .slider-certs{
+        width: 350px;
+        margin-top: 0px;
+    }
+
+
+    .slides .contenido-seccion{
+        flex-direction: column;
+    }
+
+    .slides .contenido-seccion .slider-certs{
+        width: 100%;
+    }
+
+    .slides .contenido-seccion .seccion-izquierda{
+        gap: 0
+    }
+
+    .slides .contenido-seccion .seccion-derecha .titulo--proyect{
+        padding: 0;
     }
 
     .proyectos .galeria {
@@ -1598,7 +1691,6 @@ footer .mapa {
 
     .curriculum .fila .col {
         width: 100%;
-        padding: 0;
     }
 
     .curriculum .fila .item img {
@@ -1607,13 +1699,26 @@ footer .mapa {
 
     /* Ajustes para la sección Proyectos */
 
-
-    .slides .titulo--proyect {
-        margin-bottom: 50px;
+    .slides {
+        padding: 20px 20px;
     }
 
+    .slides .titulo--proyect {
+        margin-bottom: 10px;
+    }
+
+
     .slides .contenido-seccion {
-        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .slides .contenido-seccion .seccion-izquierda{
+        gap: 0
+    }
+
+
+    .slides .contenido-seccion .seccion-izquierda .slider-certs{
+        width: 100%;
     }
 
     .slides .contenedor__proyecto {

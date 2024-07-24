@@ -8,6 +8,8 @@
         <!--para que funcionen los icons hay que colocar este link-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 
         <title>Portafolio</title>
 
@@ -34,7 +36,7 @@
                         <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                         <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
                         <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                        <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                        <li><a href="#slides" onclick="seleccionar()">PROYECTOS</a></li>
                         <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                     </ul>
                 </nav>
@@ -47,47 +49,25 @@
 
 
         <!--  SECCION INICIO  -->
-<!-- 
+
+
         <section id="inicio" class="inicio">
             <div class="contenido-banner">
                 <div class="contenido-img">
                     <img class="foto" src="/assets/imgs/img/r&m.jpg" alt="Imagen de JMS">
                 </div>
-                <h1>Jesús Sánchez</h>
-                    <h2>Desarrollador Full-Stack</h2>
-                    <div class="redes">
+                <h1>Jesús Sánchez</h1>
+                <h2>Desarrollador Full-Stack</h2>
+                <ul class="social--ul">
+                    <li class="item--">
                         <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-s%C3%A1nchez-rinc%C3%B3n-6a925318a/" target="_blank" class="icon-social" title="LinkedIn"><i class="fa-brands fa-linkedin-in icon--"></i></a>
-
-
+                    </li>
+                    <li class="item--">
                         <a href="https://github.com/JmanuelS1" class="icon-social" target="_blank" title="GitHub"><i class="fa-brands fa-github icon--"></i></a>
-
-
-                        <a href="https://www.facebook.com/jmanuel.sanchez.18/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a> 
-                        <a href="https://es.wikipedia.org/wiki/Colombia" target="_blank" title="Ubicacion"><i class="fa-solid fa-earth-americas"></i></a>
-                    </div>
+                    </li>
+                </ul>
             </div>
-        </section> -->
-
-
-        <section id="inicio" class="inicio">
-            <div class="contenido-banner">
-              <div class="contenido-img">
-                <img class="foto" src="/assets/imgs/img/r&m.jpg" alt="Imagen de JMS">
-              </div>
-              <h1>Jesús Sánchez</h1>
-              <h2>Desarrollador Full-Stack</h2>
-              <ul class="social--ul">
-                <li class="item--">
-                    <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-s%C3%A1nchez-rinc%C3%B3n-6a925318a/" target="_blank" class="icon-social" title="LinkedIn"><i class="fa-brands fa-linkedin-in icon--"></i></a>
-                </li>
-                <li class="item--">
-                    <a href="https://github.com/JmanuelS1" class="icon-social" target="_blank" title="GitHub"><i class="fa-brands fa-github icon--"></i></a>  
-                </li>
-              </ul>
-            </div>
-          </section>
-          
-
+        </section>
 
 
 
@@ -443,188 +423,212 @@
         <section id="slides" class="slides">
 
             <div class="contenido-seccion">
-                <h2 class="titulo--proyect">PROYECTOS</h2>
-                <div class="galeria">
 
-                    <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                <div class="seccion-derecha">
+                    <h2 class="titulo--proyect">PROYECTOS</h2>
+                    <div class="galeria">
+
+                        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
 
 
-                        <swiper-slide>
-                            <div class="contenedor__proyecto">
-                                <div class="proyecto">
-                                    <a href="https://rick-y-morty-app-jm.netlify.app" target="_blank">
-                                        <img class="img-proyecto" src="/assets/imgs/img/rym2.png" alt="rick y morty">
-                                        <div class="overlay">
-                                            <h3>Rick & Morty</h3>
-                                            <p>Api de personajes</p>
+                            <swiper-slide>
+                                <div class="contenedor__proyecto">
+                                    <div class="proyecto">
+                                        <a href="https://rick-y-morty-app-jm.netlify.app" target="_blank">
+                                            <img class="img-proyecto" src="/assets/imgs/img/rym2.png" alt="rick y morty">
+                                            <div class="overlay">
+                                                <h3>Rick & Morty</h3>
+                                                <p>Api de personajes</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="proyecto__description">
+                                        <div class="proyecto__redirection">
+                                            <a href='https://github.com/JmanuelS1/Rick-y-Morty-app' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
+                                            <a href='https://rick-y-morty-app-jm.netlify.app' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="proyecto__description">
-                                    <div class="proyecto__redirection">
-                                        <a href='https://github.com/JmanuelS1/Rick-y-Morty-app' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
-                                        <a href='https://rick-y-morty-app-jm.netlify.app' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                    <div class="proyecto__tecnologias">
-                                        <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
-                                        <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                                        <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
-                                        <span class="react"><i class="fa-brands fa-react"></i> React</span>
-                                        <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito">  Vite</span>
+                                        <div class="proyecto__tecnologias">
+                                            <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+                                            <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                                            <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
+                                            <span class="react"><i class="fa-brands fa-react"></i> React</span>
+                                            <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito"> Vite</span>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </swiper-slide>
-
-
-
-
-                        <swiper-slide>
-                            <div class="contenedor__proyecto">
-                                <div class="proyecto">
-                                    <a href='https://pokedex-jm.netlify.app/' target="_blank">
-                                        <img class="img-proyecto" src="/assets/imgs/img/ask.png" alt="pokemon">
-                                        <div class="overlay">
-                                            <h3>Pokedex</h3>
-                                            <p>Api de pokemones</p>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="proyecto__description">
-                                    <div class="proyecto__redirection">
-                                        <a href='https://github.com/JmanuelS1/pokedex' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
-                                        <a href='https://pokedex-jm.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                    <div class="proyecto__tecnologias">
-                                        <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
-                                        <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                                        <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
-                                        <span class="react"><i class="fa-brands fa-react"></i> React</span>
-                                        <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito">  Vite</span>
                                     </div>
                                 </div>
-                            </div>
-                        </swiper-slide>
+                            </swiper-slide>
 
 
 
-                        <swiper-slide>
-                            <div class="contenedor__proyecto">
-                                <div class="proyecto">
-                                    <a href='https://e-commerce-jm.netlify.app' target="_blank">
-                                        <img class="img-proyecto" src="/assets/imgs/img/e-commerce.avif" alt="">
-                                        <div class="overlay">
-                                            <h3>E-commerce</h3>
-                                            <p>Comercio electronico</p>
+
+                            <swiper-slide>
+                                <div class="contenedor__proyecto">
+                                    <div class="proyecto">
+                                        <a href='https://pokedex-jm.netlify.app/' target="_blank">
+                                            <img class="img-proyecto" src="/assets/imgs/img/ask.png" alt="pokemon">
+                                            <div class="overlay">
+                                                <h3>Pokedex</h3>
+                                                <p>Api de pokemones</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="proyecto__description">
+                                        <div class="proyecto__redirection">
+                                            <a href='https://github.com/JmanuelS1/pokedex' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
+                                            <a href='https://pokedex-jm.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="proyecto__description">
-                                    <div class="proyecto__redirection">
-                                        <a href='https://github.com/JmanuelS1/e-commerce-jm' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
-                                        <a href='https://e-commerce-jm.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                    <div class="proyecto__tecnologias">
-                                        <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
-                                        <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                                        <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
-                                        <span class="react"><i class="fa-brands fa-react"></i> React</span>
-                                        <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito">  Vite</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </swiper-slide>
-
-
-                        <swiper-slide>
-                            <div class="contenedor__proyecto">
-                                <div class="proyecto">
-                                    <a href='https://weather-app-jms.netlify.app' target="_blank">
-                                        <img class="img-proyecto" src="/assets/imgs/img/clima2.png" alt="">
-                                        <div class="overlay">
-                                            <h3>App weather</h3>
-                                            <p>app de consulta del clima</p>
+                                        <div class="proyecto__tecnologias">
+                                            <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+                                            <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                                            <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
+                                            <span class="react"><i class="fa-brands fa-react"></i> React</span>
+                                            <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito"> Vite</span>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="proyecto__description">
-                                    <div class="proyecto__redirection">
-                                        <a href='https://github.com/JmanuelS1/weather-app' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
-                                        <a href='https://weather-app-jms.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                    <div class="proyecto__tecnologias">
-                                        <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
-                                        <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                                        <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
-                                        <span class="react"><i class="fa-brands fa-react"></i> React</span>
-                                        <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito">  Vite</span>
                                     </div>
                                 </div>
-                            </div>
-
-                        </swiper-slide>
+                            </swiper-slide>
 
 
 
-
-
-                        <swiper-slide>
-                            <div class="contenedor__proyecto">
-                                <div class="proyecto">
-                                    <a href='https://users-app-js.netlify.app' target="_blank">
-                                        <img class="img-proyecto" src="/assets/imgs/img/users.jpg" alt="">
-                                        <div class="overlay">
-                                            <h3>Users</h3>
-                                            <p>app de creacion y registro de usuarios</p>
+                            <swiper-slide>
+                                <div class="contenedor__proyecto">
+                                    <div class="proyecto">
+                                        <a href='https://e-commerce-jm.netlify.app' target="_blank">
+                                            <img class="img-proyecto" src="/assets/imgs/img/e-commerce.avif" alt="">
+                                            <div class="overlay">
+                                                <h3>E-commerce</h3>
+                                                <p>Comercio electronico</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="proyecto__description">
+                                        <div class="proyecto__redirection">
+                                            <a href='https://github.com/JmanuelS1/e-commerce-jm' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
+                                            <a href='https://e-commerce-jm.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="proyecto__description">
-                                    <div class="proyecto__redirection">
-                                        <a href='https://github.com/JmanuelS1/users-register' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
-                                        <a href='https://users-app-js.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                    <div class="proyecto__tecnologias">
-                                        <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
-                                        <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                                        <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
-                                        <span class="react"><i class="fa-brands fa-react"></i> React</span>
-                                        <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito">  Vite</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </swiper-slide>
-
-
-                        <swiper-slide>
-                            <div class="contenedor__proyecto">
-                                <div class="proyecto">
-                                    <a href='https://fortune-cookie-jm.netlify.app' target="_blank">
-                                        <img class="img-proyecto" src="/assets/imgs/img/cookie.webp" alt="">
-                                        <div class="overlay">
-                                            <h3>Fortune cookie</h3>
-                                            <p>Galleta de la fortuna, consulta la tuya..</p>
+                                        <div class="proyecto__tecnologias">
+                                            <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+                                            <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                                            <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
+                                            <span class="react"><i class="fa-brands fa-react"></i> React</span>
+                                            <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito"> Vite</span>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="proyecto__description">
-                                    <div class="proyecto__redirection">
-                                        <a href='https://github.com/JmanuelS1/fortune-cookie' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
-                                        <a href='https://fortune-cookie-jm.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                    </div>
-                                    <div class="proyecto__tecnologias">
-                                        <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
-                                        <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                                        <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
-                                        <span class="react"><i class="fa-brands fa-react"></i> React</span>
-                                        <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito">  Vite</span>
                                     </div>
                                 </div>
-                            </div>
-                        </swiper-slide>
-                    </swiper-container>
+                            </swiper-slide>
+
+
+                            <swiper-slide>
+                                <div class="contenedor__proyecto">
+                                    <div class="proyecto">
+                                        <a href='https://weather-app-jms.netlify.app' target="_blank">
+                                            <img class="img-proyecto" src="/assets/imgs/img/clima2.png" alt="">
+                                            <div class="overlay">
+                                                <h3>App weather</h3>
+                                                <p>app de consulta del clima</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="proyecto__description">
+                                        <div class="proyecto__redirection">
+                                            <a href='https://github.com/JmanuelS1/weather-app' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
+                                            <a href='https://weather-app-jms.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        <div class="proyecto__tecnologias">
+                                            <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+                                            <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                                            <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
+                                            <span class="react"><i class="fa-brands fa-react"></i> React</span>
+                                            <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito"> Vite</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </swiper-slide>
+
+
+
+
+
+                            <swiper-slide>
+                                <div class="contenedor__proyecto">
+                                    <div class="proyecto">
+                                        <a href='https://users-app-js.netlify.app' target="_blank">
+                                            <img class="img-proyecto" src="/assets/imgs/img/users.jpg" alt="">
+                                            <div class="overlay">
+                                                <h3>Users</h3>
+                                                <p>app de creacion y registro de usuarios</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="proyecto__description">
+                                        <div class="proyecto__redirection">
+                                            <a href='https://github.com/JmanuelS1/users-register' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
+                                            <a href='https://users-app-js.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        <div class="proyecto__tecnologias">
+                                            <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+                                            <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                                            <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
+                                            <span class="react"><i class="fa-brands fa-react"></i> React</span>
+                                            <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito"> Vite</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+
+
+                            <swiper-slide>
+                                <div class="contenedor__proyecto">
+                                    <div class="proyecto">
+                                        <a href='https://fortune-cookie-jm.netlify.app' target="_blank">
+                                            <img class="img-proyecto" src="/assets/imgs/img/cookie.webp" alt="">
+                                            <div class="overlay">
+                                                <h3>Fortune cookie</h3>
+                                                <p>Galleta de la fortuna, consulta la tuya..</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="proyecto__description">
+                                        <div class="proyecto__redirection">
+                                            <a href='https://github.com/JmanuelS1/fortune-cookie' target="_blank" title="Ver Repositorio"><i class="fa-brands fa-github"></i></a>
+                                            <a href='https://fortune-cookie-jm.netlify.app/' target="_blank" title="Ver Proyecto"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        </div>
+                                        <div class="proyecto__tecnologias">
+                                            <span class="js"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+                                            <span class="css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                                            <span class="html"><i class="fa-brands fa-html5"></i> HTML</span>
+                                            <span class="react"><i class="fa-brands fa-react"></i> React</span>
+                                            <span class="vite"><img src='./assets/imgs/img/svg/vite.svg' alt='vite' class="vitesito"> Vite</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </swiper-slide>
+                        </swiper-container>
+                    </div>
                 </div>
+
+
+                <div class="seccion-izquierda">
+
+                    <h2 class="titulo--certificados">CERTIFICADOS</h2>
+
+                    <swiper-container class="slider-certs" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+                    css-mode="false" >
+
+                    <swiper-slide> <img src="./assets/imgs/img/certificadosAcademlo/certificate_Fundamentos.png" alt=""></swiper-slide>
+
+                    <swiper-slide><img src="./assets/imgs/img/certificadosAcademlo/certificate_React.png" alt=""></swiper-slide>
+
+                    <swiper-slide> <img src="./assets/imgs/img/certificadosAcademlo/certficate_node.png" alt=""></swiper-slide>
+
+                    <swiper-slide>  <img src="./assets/imgs/img/certificadosAcademlo/certificate_fullstack.png" alt=""></swiper-slide>
+
+                  </swiper-container>
+
+                 </div>
+
             </div>
         </section>
         <hr>
@@ -734,9 +738,9 @@
                             <a href="https://www.linkedin.com/in/jes%C3%BAs-manuel-s%C3%A1nchez-rinc%C3%B3n-6a925318a/" target="_blank" class="icon-social" title="LinkedIn"><i class="fa-brands fa-linkedin-in icon--"></i></a>
                         </li>
                         <li class="item--">
-                            <a href="https://github.com/JmanuelS1" class="icon-social" target="_blank" title="GitHub"><i class="fa-brands fa-github icon--"></i></a>  
+                            <a href="https://github.com/JmanuelS1" class="icon-social" target="_blank" title="GitHub"><i class="fa-brands fa-github icon--"></i></a>
                         </li>
-                      </ul>
+                    </ul>
                 </div>
                 <div class="footer__right">
                     <p class="parrafo">© 2024 Todos los derechos reservados.</p>
@@ -759,8 +763,10 @@
 
 
 
-        <script src="/assets/js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="/assets/js/script.js"></script>
+
+        
         <!--script para el modal-->
         <script>
             document.addEventListener("DOMContentLoaded", function () {
